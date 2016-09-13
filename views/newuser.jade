@@ -1,0 +1,11 @@
+//
+   Created by loketa on 9/12/16.
+
+extends layout
+
+block content
+    h1=title
+    form#formAdduser(name="adduser",method="post",action="/adduser")
+        input#inputUserName(type="text",placeholder="username",name="username")
+        input#inpustUserPhone(type="text",placeholder="phone",name="phone")
+        button#btnSubmit(type="submit") submit

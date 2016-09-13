@@ -1,0 +1,32 @@
+//
+   Created by loketa on 9/12/16.
+
+extends layout
+
+block content
+    form(action="#" method="post")
+        table.table.table-hover
+            tr.text-center
+                td ID
+                td 姓名
+                td 电话
+                td 状态
+            each user ,i in userlist
+                tr.text-center
+                    td #{user._id}
+                    td #{user.username}
+                    td #{user.phone}
+                    td
+                        select.form-control(name="statu_#{user._id}")
+                            option(value="normal") 正常
+                            option(value="leave") 请假
+                            option(value="late") 迟到
+                            option(value="early") 早退
+                            option(value="absent") 旷工
+        a.pull-right.btn-lg.btn-default(href="/checkwork") 重置
+        input.pull-right.btn.btn-lg.btn-primary(type="submit" value="提交")
+
+
+
+
+
