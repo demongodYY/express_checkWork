@@ -6,6 +6,16 @@ extends layout
 block content
     h1=title
     form#formAdduser(name="adduser",method="post",action="/adduser")
-        input#inputUserName(type="text",placeholder="username",name="username")
-        input#inpustUserPhone(type="text",placeholder="phone",name="phone")
-        button#btnSubmit(type="submit") submit
+        div.row
+            div.col-md-2
+                select.form-control(name="dept")
+                    option(value="处部") 处部
+                    option(value="一科") 一科
+                    option(value="二科") 二科
+                    option(value="三科") 三科
+                    option(value="四科") 四科
+            div.col-md-2
+                input#inputUserName(type="text",placeholder="username",name="username")
+            div.col-md-2
+                input#inpustUserPhone(type="text",placeholder="phone",name="phone")
+        button#btnSubmit.pull-right.btn.btn-success(type="submit") submit

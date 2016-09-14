@@ -1,0 +1,31 @@
+//
+   Created by loketa on 9/14/16.
+extends layout
+
+mixin dept(dept,i)
+    li(id="id_dept_#{i}")=dept
+        ul
+            each user ,i in userlist
+                if (user.dept === dept)
+                    li.staff
+                        a(href="#") #{user.username}
+
+block headStyle
+    link(rel="stylesheet/less",type="text/css", href='/vendor/jstree-dist/themes/default/style.min.css')
+
+block headJavascript
+    script(src="/vendor/jstree-dist/jstree.min.js",type="text/javascript")
+    script(src="/javascripts/staffstatu.js",type="text/javascript")
+
+block content
+    article.col-md-12
+        aside.col-md-2
+            h4 员工列表
+            nav#id_staffTree
+                ul
+                    each dept,i in depts
+                        +dept(dept,i)
+        article.col-md-10.jumbotron
+            h1
+                span.glyphicon.glyphicon-hand-left
+                |请选择员工
