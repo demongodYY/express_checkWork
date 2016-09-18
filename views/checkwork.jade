@@ -26,7 +26,7 @@ block content
                                 option(value="early") 早退
                                 option(value="absent") 旷工
                         td
-                            label.btn.btn-default(for="#id_overtime_#{i}")
+                            label.btn.btn-default.btn-clickable(for="#id_overtime_#{i}")
                                 span.glyphicon.glyphicon-ok
                             input(id="#id_overtime_#{i}" type="checkbox" name="overtime" value="#{user._id}" hidden)
 

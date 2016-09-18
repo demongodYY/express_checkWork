@@ -17,26 +17,31 @@ router.get('/checkwork',function(req,res){
 
   collection.find({},{},function(e,docs){
     res.render('checkwork',{
-      "userlist" : docs,
+      "userlist" : docs
     });
   });
 });
 
-router.get('/stuffstatu',function(req,res){
+router.get('/staffstatu/:id',function(req,res){
   var db = req.db;
   var collection = db.get('usercollection');
   var depts = ['处部','一科','二科','三科','四科'];
   collection.find({},{},function(e,docs){
-
-    res.render('stuffstatu',{
+    var userSelected = docs.find(function (element) {
+      return element._id==req.params.id;
+    });
+    console.log(userSelected);
+    res.render('staffstatu',{
+      "title" : "员工状态",
       "userlist" : docs,
+      "userselected" : userSelected,
       "depts" : depts
     });
   });
 });
 
 router.get('/newuser',function(req,res){
-  res.render('newuser',{title:'Add New User'});
+  res.render('newuser',{title:'添加新员工'});
 });
 
 router.post('/adduser',function(req,res){
