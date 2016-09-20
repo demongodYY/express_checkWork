@@ -9,7 +9,6 @@ $(document).ready(function () {
        }
        else{
            $(this).addClass("active");
-           //alert("123");
        }
    });
 });

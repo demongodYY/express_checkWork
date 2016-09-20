@@ -17,6 +17,7 @@ router.get('/checkwork',function(req,res){
 
   collection.find({},{},function(e,docs){
     res.render('checkwork',{
+      "title" : "考勤登记",
       "userlist" : docs
     });
   });
@@ -26,22 +27,47 @@ router.get('/staffstatu/:id',function(req,res){
   var db = req.db;
   var collection = db.get('usercollection');
   var depts = ['处部','一科','二科','三科','四科'];
-  collection.find({},{},function(e,docs){
-    var userSelected = docs.find(function (element) {
+  collection.find({},{},function(e1,userList){
+    var userSelected = userList.find(function (element) {
       return element._id==req.params.id;
     });
-    console.log(userSelected);
-    res.render('staffstatu',{
-      "title" : "员工状态",
-      "userlist" : docs,
-      "userselected" : userSelected,
-      "depts" : depts
+    var eventCol = db.get('staffevent');
+    eventCol.find({"staffId":req.params.id},{},function(e2,staffEvents){
+      var todayLeave  = "未请假";
+      var today = (new Date().toLocaleDateString());
+      for (var i=0;i<staffEvents.length;i++){
+        var staffDay = new Date(staffEvents[i].date).toLocaleDateString();
+        if((staffEvents[i].event=="leave")&&(today==staffDay)){
+            todayLeave = "请假"
+        }
+      }
+      res.render('staffstatu',{
+        "title" : "员工状态",
+        "userlist" : userList,
+        "userselected" : userSelected,
+        "depts" : depts,
+        "todayleave" : todayLeave
+      });
     });
   });
 });
 
+router.get('/leave',function(req,res){
+  res.render('leave',{
+    title:"员工请假"
+  });
+});
+
+router.get('/analyse',function(req,res){
+  res.render('analyse',{
+    title:"数据分析"
+  });
+});
+
 router.get('/newuser',function(req,res){
-  res.render('newuser',{title:'添加新员工'});
+  res.render('newuser',{
+    title:'添加新员工'
+  });
 });
 
 router.post('/adduser',function(req,res){
@@ -67,5 +93,32 @@ router.post('/adduser',function(req,res){
       }
   );
 });
+
+router.post('/staffevent',function(req,res){
+  var db=req.db;
+  var date=req.body.date;
+  var staffEvents=req.body.staffevent;
+  var collection = db.get('staffevent');
+  for (var i=0;i<staffEvents.length;i++){
+    var staffEvent = staffEvents[i].split('&');
+    if (staffEvent[1]!="normal"){
+      collection.insert(
+          {
+            "staffId" : staffEvent[0],
+            "event" : staffEvent[1],
+            "date" : date
+          },function(err){
+            if(err){
+              res.send("录入失败！");
+            }
+          }
+      );
+    }
+  }
+  res.location("checkwork");
+  res.redirect("checkwork");
+});
+
+
 
 module.exports = router;

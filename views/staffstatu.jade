@@ -30,22 +30,24 @@ block content
                 section
                     //h2.text-center=title
                     div.col-md-6
-                        |姓名：#{userselected.username}
-                        br
-                        |电话：#{userselected.phone}
-                        br
-                        |部门：#{userselected.dept}
-                        br
-                        |当前状态：正常
+                        p
+                            |姓名：#{userselected.username}
+                            br
+                            |电话：#{userselected.phone}
+                            br
+                            |部门：#{userselected.dept}
+                            br
+                            |当前状态：正常
                     div.col-md-6
-                        |剩余假期：12
-                        br
-                        |请假状况：
-                        br
-                        |考勤状况：
-                        br
-                        |本月概况：
-                        br
+                        p
+                            |剩余假期：#{userselected.vecation}
+                            br
+                            |请假状况：#{todayleave}
+                            br
+                            |考勤状况：
+                            br
+                            |本月概况：
+                            br
 
             else
                 //h2.text-center=title

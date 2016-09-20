@@ -2,18 +2,92 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c591eb7f-0231-43b5-8e9c-5ddc12e691e1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/leave.jade" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/stuffstatu.jade" afterPath="$PROJECT_DIR$/views/staffstatu.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/local.0" afterPath="$PROJECT_DIR$/data/local.0" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/local.ns" afterPath="$PROJECT_DIR$/data/local.ns" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/dateselect.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/analyse.jade" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/css/bootstrap-datepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/css/bootstrap-datepicker.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/css/bootstrap-datepicker.standalone.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/css/bootstrap-datepicker.standalone.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/css/bootstrap-datepicker3.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/css/bootstrap-datepicker3.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/css/bootstrap-datepicker3.standalone.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/css/bootstrap-datepicker3.standalone.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/js/bootstrap-datepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/js/bootstrap-datepicker.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.ar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.az.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.bg.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.bs.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.ca.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.cs.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.cy.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.da.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.de.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.el.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.en-GB.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.eo.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.es.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.et.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.eu.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.fa.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.fi.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.fo.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.fr-CH.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.fr.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.gl.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.he.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.hr.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.hu.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.hy.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.id.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.is.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.it-CH.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.it.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.ja.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.ka.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.kh.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.kk.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.ko.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.kr.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.lt.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.lv.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.me.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.mk.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.mn.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.ms.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.nb.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.nl-BE.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.nl.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.no.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.pl.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.pt-BR.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.pt.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.ro.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.rs-latin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.rs.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.ru.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.sk.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.sl.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.sq.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.sr-latin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.sr.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.sv.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.sw.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.th.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.tr.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.uk.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.vi.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.zh-CN.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.5.0-dist/locales/bootstrap-datepicker.zh-TW.min.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/staffstatu.js" afterPath="$PROJECT_DIR$/public/javascripts/staffstatu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/style.less" afterPath="$PROJECT_DIR$/public/stylesheets/style.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TODO.Md" afterPath="$PROJECT_DIR$/TODO.Md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/main.js" afterPath="$PROJECT_DIR$/public/javascripts/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/checkwork.jade" afterPath="$PROJECT_DIR$/views/checkwork.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/header.jade" afterPath="$PROJECT_DIR$/views/header.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.jade" afterPath="$PROJECT_DIR$/views/layout.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/leave.jade" afterPath="$PROJECT_DIR$/views/leave.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/staffstatu.jade" afterPath="$PROJECT_DIR$/views/staffstatu.jade" />
     </list>
     <ignored path="checkWork.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,11 +108,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <file leaf-file-name="leave.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/leave.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.928572">
-              <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+            <state vertical-scroll-proportion="-9.892858">
+              <caret line="27" column="75" selection-start-line="25" selection-start-column="3" selection-end-line="27" selection-end-column="75" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="analyse.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/analyse.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.2142856">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -47,50 +131,8 @@
       <file leaf-file-name="checkwork.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/checkwork.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.714286">
-              <caret line="28" column="63" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/header.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.928572">
-              <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="staffstatu.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/staffstatu.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#40#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="staffstatu.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/staffstatu.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.5">
-              <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="leave.jade" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/leave.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-29.571428">
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -99,28 +141,28 @@
       <file leaf-file-name="layout.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/layout.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.071429">
-              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+            <state vertical-scroll-proportion="-3.857143">
+              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newuser.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/newuser.jade">
+      <file leaf-file-name="error.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/error.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.857142">
-              <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="helloworld.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/helloworld.jade">
+      <file leaf-file-name="staffstatu.jade" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/staffstatu.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.5">
-              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.49896482">
+              <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -136,13 +178,43 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="newuser.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/newuser.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.9285715">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/index.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.64285713">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="helloworld.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/helloworld.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.2142856">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="7" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Jade File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -164,15 +236,18 @@
         <option value="$PROJECT_DIR$/views/sider.jade" />
         <option value="$PROJECT_DIR$/views/newuser.jade" />
         <option value="$PROJECT_DIR$/views/stuffstatu.jade" />
-        <option value="$PROJECT_DIR$/TODO.Md" />
-        <option value="$PROJECT_DIR$/views/checkwork.jade" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.less" />
-        <option value="$PROJECT_DIR$/views/layout.jade" />
-        <option value="$PROJECT_DIR$/public/javascripts/main.js" />
         <option value="$PROJECT_DIR$/public/javascripts/staffstatu.js" />
+        <option value="$PROJECT_DIR$/views/analyse.jade" />
+        <option value="$PROJECT_DIR$/public/javascripts/main.js" />
+        <option value="$PROJECT_DIR$/views/leave.jade" />
+        <option value="$PROJECT_DIR$/views/layout.jade" />
+        <option value="$PROJECT_DIR$/views/checkwork.jade" />
         <option value="$PROJECT_DIR$/views/header.jade" />
-        <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/views/staffstatu.jade" />
+        <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/dateselect.js" />
+        <option value="$PROJECT_DIR$/TODO.Md" />
       </list>
     </option>
   </component>
@@ -184,8 +259,9 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1270" />
-    <option name="height" value="996" />
+    <option name="y" value="-1" />
+    <option name="width" value="1280" />
+    <option name="height" value="999" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -213,7 +289,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -273,6 +348,32 @@
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="checkWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="checkWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap-datepicker-1.6.1-dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -310,8 +411,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="checkWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="checkWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -323,6 +439,7 @@
     <property name="javascript.nodejs.core.library.configured.version" value="4.2.6" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/loketa/Coding/Project/WebstormProjects/checkWork/views/leave.jade" />
   </component>
   <component name="RunManager" selected="npm.checkWork">
     <configuration default="false" name="app.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/bin/node" path-to-js-file="app.js" working-dir="$PROJECT_DIR$">
@@ -406,15 +523,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1270" height="996" extended-state="0" />
+    <frame x="0" y="-1" width="1280" height="999" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31811023" sideWeight="0.49611542" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.315625" sideWeight="0.49611542" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.503125" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.315625" sideWeight="0.5066225" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41759464" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40066594" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33073497" sideWeight="0.496875" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.315625" sideWeight="0.50388455" order="2" side_tool="true" content_ui="tabs" />
@@ -424,7 +542,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -444,7 +561,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/routes/index.js</url>
-          <line>25</line>
+          <line>26</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
@@ -453,44 +570,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/newuser.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="62" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TODO.Md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/checkwork.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -594,6 +673,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -674,6 +754,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -698,27 +779,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.64285713">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/error.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/jstree-master/demo/basic/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -726,18 +786,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TODO.Md">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/staffstatu.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-          <folding />
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.6.1-dist/js/bootstrap-datepicker.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/vendor/bootstrap-datepicker-1.6.1-dist/js/bootstrap-datepicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style.less">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.2">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/vendor/bootstrap-3.3.5-dist/css/bootstrap-theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.740741">
+          <caret line="341" column="28" selection-start-line="341" selection-start-column="28" selection-end-line="341" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/main.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/header.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.928572">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -750,54 +855,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/main.js">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/header.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.928572">
-          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/staffstatu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.071429">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/checkwork.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.714286">
-          <caret line="28" column="63" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
+          <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.928572">
-          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/dateselect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TODO.Md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/analyse.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2142856">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/checkwork.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-29.571428">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/error.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/helloworld.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2142856">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="7" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.64285713">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.857143">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/leave.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.892858">
+          <caret line="27" column="75" selection-start-line="25" selection-start-column="3" selection-end-line="27" selection-end-column="75" />
           <folding />
         </state>
       </provider>
@@ -812,32 +955,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/newuser.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.857142">
-          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/helloworld.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.5">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        <state vertical-scroll-proportion="-1.9285715">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/staffstatu.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.5">
-          <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/leave.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.49896482">
+          <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
           <folding />
         </state>
       </provider>
