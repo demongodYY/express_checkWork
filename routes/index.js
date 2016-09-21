@@ -52,10 +52,17 @@ router.get('/staffstatu/:id',function(req,res){
   });
 });
 
-router.get('/leave',function(req,res){
-  res.render('leave',{
-    title:"员工请假"
+router.get('/staffleave',function(req,res){
+  var db=req.db;
+  var collection = db.get('usercollection');
+  collection.find({},{},function(e,userList){
+    res.render('staffleave',{
+      "title" : "员工请假",
+      "userlist" : userList
+    });
+
   });
+
 });
 
 router.get('/analyse',function(req,res){
@@ -117,6 +124,31 @@ router.post('/staffevent',function(req,res){
   }
   res.location("checkwork");
   res.redirect("checkwork");
+});
+
+router.post('/leave',function(req,res){
+  var db = req.db;
+  var staffId = req.body.staffId;
+  var beginDate = new Date(req.body.begindate);
+  var endDate = new Date(req.body.enddate);
+  var collection = db.get('staffevent');
+  do{
+      collection.insert(
+          {
+            "staffId" : staffId,
+            "event" : "leave",
+            "date" : beginDate.toLocaleDateString()
+          },function(err,doc){
+            if(err){
+              res.send("adding failed!");
+            }
+          }
+      );
+      beginDate.setDate(beginDate.getDate()+1);
+
+  }while(beginDate<=endDate);
+  res.location("staffleave");
+  res.redirect("staffleave");
 });
 
 
