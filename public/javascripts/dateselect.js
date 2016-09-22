@@ -12,6 +12,7 @@ $(document).ready(function () {
     $('.input-daterange').datepicker({
         inputs: $('.actual_range'),
         startDate:'0d',
+        todayHighlight:'true',
         autoclose:true
     });
     $('#begin-date').datepicker("update" , new Date()).on('changeDate',function(e){

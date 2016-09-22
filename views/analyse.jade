@@ -4,3 +4,16 @@
 extends layout
 
 block content
+    article.col-md-12
+        aside.col-md-2
+            nav.analyse-aside
+                ul.list-group(role="tablist")
+                    li.list-group-item.active(role="presentation")
+                        a(href="#statuForDay" data-toggle="tab") 每日考勤状态
+                    li.list-group-item(role="presentation")
+                        a(href="#statuAnalyse" data-toggle="tab") 考勤状态分析
+        aticle.col-md-10.jumbotron.tab-content
+            div#statuForDay.tab-pane.active
+                h1 day
+            div#statuAnalyse.tab-pane
+                h1 analyse

@@ -31,23 +31,22 @@ router.get('/staffstatu/:id',function(req,res){
     var userSelected = userList.find(function (element) {
       return element._id==req.params.id;
     });
-    var eventCol = db.get('staffevent');
-    eventCol.find({"staffId":req.params.id},{},function(e2,staffEvents){
-      var todayLeave  = "未请假";
-      var today = (new Date().toLocaleDateString());
-      for (var i=0;i<staffEvents.length;i++){
-        var staffDay = new Date(staffEvents[i].date).toLocaleDateString();
-        if((staffEvents[i].event=="leave")&&(today==staffDay)){
-            todayLeave = "请假"
+    var todayLeave  = "未请假";
+    var today = (new Date().toLocaleDateString());
+    if (userSelected!=undefined){
+      for (var i=0;i<userSelected.events.length;i++){
+        var staffDay = new Date(userSelected.events[i].date).toLocaleDateString();
+        if((userSelected.events[i].event=="leave")&&(today==staffDay)){
+          todayLeave = "请假"
         }
       }
-      res.render('staffstatu',{
-        "title" : "员工状态",
-        "userlist" : userList,
-        "userselected" : userSelected,
-        "depts" : depts,
-        "todayleave" : todayLeave
-      });
+    }
+    res.render('staffstatu',{
+      "title" : "员工状态",
+      "userlist" : userList,
+      "userselected" : userSelected,
+      "depts" : depts,
+      "todayleave" : todayLeave
     });
   });
 });
@@ -82,13 +81,17 @@ router.post('/adduser',function(req,res){
   var userName = req.body.username;
   var userPhone = req.body.phone;
   var dept = req.body.dept;
+  var userVecation = req.body.vecation;
   var collection = db.get('usercollection');
+  var userEvents=[];
 
   collection.insert(
       {
         "dept":dept,
         "username":userName,
-        "phone" : userPhone
+        "phone" : userPhone,
+        "vecation" : userVecation,
+        "events" : userEvents
       },function(err,doc){
         if(err){
           res.send("adding failed!");
@@ -105,16 +108,23 @@ router.post('/staffevent',function(req,res){
   var db=req.db;
   var date=req.body.date;
   var staffEvents=req.body.staffevent;
-  var collection = db.get('staffevent');
+  var collection = db.get('usercollection');
   for (var i=0;i<staffEvents.length;i++){
     var staffEvent = staffEvents[i].split('&');
     if (staffEvent[1]!="normal"){
-      collection.insert(
+      collection.update(
           {
-            "staffId" : staffEvent[0],
-            "event" : staffEvent[1],
-            "date" : date
-          },function(err){
+            "_id" : staffEvent[0]
+          },
+          {
+            $push :{
+              "events" : {
+                "event" : staffEvent[1],
+                "date" : date
+              }
+            }
+          },
+          function(err){
             if(err){
               res.send("录入失败！");
             }
@@ -131,22 +141,29 @@ router.post('/leave',function(req,res){
   var staffId = req.body.staffId;
   var beginDate = new Date(req.body.begindate);
   var endDate = new Date(req.body.enddate);
-  var collection = db.get('staffevent');
+  var collection = db.get('usercollection');
   do{
-      collection.insert(
-          {
-            "staffId" : staffId,
-            "event" : "leave",
-            "date" : beginDate.toLocaleDateString()
-          },function(err,doc){
-            if(err){
-              res.send("adding failed!");
+    collection.update(
+        {
+          "_id" :staffId
+        },
+        {
+          $push :{
+            "events" : {
+              "event" : "leave",
+              "date" : beginDate.toLocaleDateString()
             }
           }
-      );
-      beginDate.setDate(beginDate.getDate()+1);
-
+        },
+        function(err){
+          if(err){
+            res.send("录入失败！");
+          }
+        }
+    );
+    beginDate.setDate(beginDate.getDate()+1);
   }while(beginDate<=endDate);
+
   res.location("staffleave");
   res.redirect("staffleave");
 });
