@@ -65,9 +65,14 @@ router.get('/staffleave',function(req,res){
 });
 
 router.get('/analyse',function(req,res){
-  res.render('analyse',{
-    title:"数据分析"
+  var db= req.db;
+  var collection = db.get('usercollection');
+  collection.find({},{},function(e,userList){
+    res.render('analyse',{
+      title:"数据分析"
+    });
   });
+
 });
 
 router.get('/newuser',function(req,res){
@@ -166,6 +171,17 @@ router.post('/leave',function(req,res){
 
   res.location("staffleave");
   res.redirect("staffleave");
+});
+
+router.post('/getstatu',function(req,res){
+  var db= req.db;
+  var date = req.body.date;
+  console.log(date);
+  var collection = db.get('usercollection');
+  collection.find({},{fields:{"dept":1,"username":1,"phone":1,"events":{"$elemMatch":{"date":date}}}}, function (e,userList) {
+    console.log(userList);
+    res.send(userList);
+  })
 });
 
 
