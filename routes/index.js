@@ -69,7 +69,8 @@ router.get('/analyse',function(req,res){
   var collection = db.get('usercollection');
   collection.find({},{},function(e,userList){
     res.render('analyse',{
-      title:"数据分析"
+      "title":"数据分析",
+      "userList":userList
     });
   });
 
@@ -111,7 +112,7 @@ router.post('/adduser',function(req,res){
 
 router.post('/staffevent',function(req,res){
   var db=req.db;
-  var date=req.body.date;
+  var date=new Date(req.body.date).toDateString();
   var staffEvents=req.body.staffevent;
   var collection = db.get('usercollection');
   for (var i=0;i<staffEvents.length;i++){
@@ -156,7 +157,7 @@ router.post('/leave',function(req,res){
           $push :{
             "events" : {
               "event" : "leave",
-              "date" : beginDate.toLocaleDateString()
+              "date" : beginDate.toDateString()
             }
           }
         },
@@ -175,12 +176,14 @@ router.post('/leave',function(req,res){
 
 router.post('/getstatu',function(req,res){
   var db= req.db;
-  var date = req.body.date;
-  console.log(date);
+  var date = new Date(req.body.date).toDateString();
   var collection = db.get('usercollection');
-  collection.find({},{fields:{"dept":1,"username":1,"phone":1,"events":{"$elemMatch":{"date":date}}}}, function (e,userList) {
-    console.log(userList);
-    res.send(userList);
+  collection.aggregate([
+    {$unwind:"$events"},
+    {$match:{"events.date":{"$eq":date}}},
+    {$group:{_id:"$_id","events":{$push:"$events.event"}}}
+  ], function (e,doc) {
+    res.send(doc);
   })
 });
 

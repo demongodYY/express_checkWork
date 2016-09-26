@@ -28,6 +28,19 @@ block content
                         td 姓名
                         td 电话
                         td 状态
+                    each user ,i in userList
+                        tr.text-center.tr-content
+                            td #{user.dept}
+                            td #{user.username}
+                            td #{user.phone}
+                            td.staffStatu
+                                input(type="hidden",name="staff_id",value="#{user._id}")
+                                span.label.userStatu.label-success.disActive.normal 正常
+                                span.label.label-warning.disActive.late 迟到
+                                span.label.label-info.disActive.early 早退
+                                span.label.label-primary.disActive.leave 请假
+                                span.label.label-danger.disActive.absent 旷工
+                                span.label.label-success.disActive.overtime 加班
 
                     div.col-md-1.pull-right
                         button#id_query_statu.btn.btn-primary.btn-lg 查询
@@ -36,4 +49,4 @@ block content
                             span.input-group-addon 选择日期
                             input#id_date.form-control.input-date(type="text" name="date")
             div#statuAnalyse.tab-pane
-                h1 analyse
+                h1 暂未开放哦

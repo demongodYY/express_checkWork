@@ -2,30 +2,37 @@
  * Created by loketa on 9/22/16.
  */
 
+var setStatus=function(userId,userEvent){
+    var userIdInput = $("input[value="+userId+"]");
+    if(userEvent!="overtime"&&userEvent!="normal"){
+        userIdInput.siblings("span.normal").addClass("disActive");
+    }
+    userIdInput.siblings("span."+userEvent).removeClass("disActive");
+};
+
+var refreshStatus=function(){
+    $("td.staffStatu span.label").addClass("disActive");
+    $("td.staffStatu span.label.normal").removeClass("disActive");
+};
+
+
+
 $(document).ready(function () {
    $("button#id_query_statu").click(function(){
        var postData = $("form#date_post").serialize();
        $.post("/getstatu",postData,function(data,status){
-           var table = $("table.staff-statu-list");
-           $("tr.tr-content").remove();
-           for(var i = 0;i<data.length;i++){
-               var trStatu = "<tr class='text-center tr-content'>";
-               trStatu += "<td>"+data[i].dept+"</td>";
-               trStatu += "<td>"+data[i].username+"</td>";
-               trStatu += "<td>"+data[i].phone+"</td>";
-               if(data[i].events==undefined){
-                   trStatu += "<td>"+"normal"+"</td>";
+           refreshStatus();
+           for (var i = 0;i<data.length;i++){
+               var userId = data[i]._id;
+               var userEvents = data[i].events;
+               if(userEvents.length==0){
+                   setStatus(userId,"normal");
                }
                else{
-                   var tbStatu = "";
-                   for(var j=0; j<data[i].events.length;j++)
-                   {
-                       tbStatu+= data[i].events[j].event;
+                   for(var j=0;j<userEvents.length;j++){
+                       setStatus(userId,userEvents[j]);
                    }
-                   trStatu += "<td>"+tbStatu+"</td>";
                }
-               trStatu += "</tr>";
-               $("table.staff-statu-list tbody").append(trStatu);
            }
        });
    }).click();
