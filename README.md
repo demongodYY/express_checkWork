@@ -1,6 +1,5 @@
 
 #公司考勤系统
--------------
 [![Wercker](https://img.shields.io/wercker/ci/wercker/docs.svg?maxAge=2592000)]()
 [![node](https://img.shields.io/node/v/gh-badges.svg?maxAge=2592000)]()
 [![MyGet](https://img.shields.io/myget/mongodb/v/MongoDB.Driver.Core.svg?maxAge=2592000)]()
