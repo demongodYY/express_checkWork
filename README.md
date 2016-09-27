@@ -1,15 +1,16 @@
 
 #公司考勤系统
 -------------
+[![Wercker](https://img.shields.io/wercker/ci/wercker/docs.svg?maxAge=2592000)]()
 
-　利用了Nodejs+EXPRESS＋MongoDB完成的公司考勤系统
+利用了Nodejs+EXPRESS＋MongoDB完成的公司考勤系统
 
-####功能:
-－ 每日员工考勤状况登记
-－ 查看特定日期员工考勤状况
-－ 员工请假
-－ 查看员工状态
-－ 添加员工
+###功能:
+- 每日员工考勤状况登记
+- 查看特定日期员工考勤状况
+- 员工请假
+- 查看员工状态
+- 添加员工
 
 
 
