@@ -96,7 +96,7 @@ router.post('/adduser',function(req,res){
         "dept":dept,
         "username":userName,
         "phone" : userPhone,
-        "vecation" : userVecation,
+        "vecation" : parseInt(userVecation),
         "events" : userEvents
       },function(err,doc){
         if(err){
@@ -113,7 +113,9 @@ router.post('/adduser',function(req,res){
 router.post('/staffevent',function(req,res){
   var db=req.db;
   var date=new Date(req.body.date).toDateString();
-  var staffEvents=req.body.staffevent;
+  var staffEvents=[];
+  staffEvents=staffEvents.concat(req.body.staffevent);  //加入事件
+  console.log(req.body.staffevent);
   var collection = db.get('usercollection');
   for (var i=0;i<staffEvents.length;i++){
     var staffEvent = staffEvents[i].split('&');
@@ -125,7 +127,7 @@ router.post('/staffevent',function(req,res){
           {
             $push :{
               "events" : {
-                "event" : staffEvent[1],
+                "event" : "123",
                 "date" : date
               }
             }
@@ -136,6 +138,22 @@ router.post('/staffevent',function(req,res){
             }
           }
       );
+    }
+    if(staffEvent[1]=="leave"){
+        collection.update(
+            {
+              "_id" : staffEvent[0],
+              "vecation" :{$gt:0}
+            },
+            {
+              $inc:{"vecation":-1}
+            },
+            function(err){
+              if(err){
+                res.send("假期出错！");
+              }
+            }
+        );
     }
   }
   res.location("checkwork");
@@ -159,7 +177,8 @@ router.post('/leave',function(req,res){
               "event" : "leave",
               "date" : beginDate.toDateString()
             }
-          }
+          },
+          $inc:{"vecation" : -1}
         },
         function(err){
           if(err){
